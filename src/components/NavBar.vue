@@ -17,9 +17,6 @@ const darkMode = ref(false);
     </div>
     <SwitchGroup>
       <div class="flex items-center">
-        <SwitchLabel class="text-sm italic pr-2">
-          <MoonSVG class="text-white" :class="{ filled: darkMode }" />
-        </SwitchLabel>
         <Switch
           v-model="darkMode"
           :class="darkMode ? 'bg-teal-900' : 'bg-teal-700'"
@@ -30,6 +27,9 @@ const darkMode = ref(false);
             class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform"
           />
         </Switch>
+        <SwitchLabel class="text-sm italic pl-2">
+          <MoonSVG class="text-white" :class="{ filled: darkMode }" />
+        </SwitchLabel>
       </div>
     </SwitchGroup>
   </div>
