@@ -2,26 +2,31 @@
 </script>
 
 <template>
-  <div class="bg-gray-50">
+  <div>
     <div
-      class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
+      class="landing mx-auto max-w-screen-xl h-screen px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-center lg:flex-col lg:py-16 lg:px-8"
     >
       <h2
-        class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        class="heading text-4xl font-bold sm:text-6xl mb-2"
       >
-        Ready to dive in?
-        <br />
-        <span class="text-indigo-600">Vite + Vue 3 + Tailwind CSS</span>
+        Nick Ray
       </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <router-link
-            to="/about"
-            class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"
-            >Next Page</router-link
-          >
-        </div>
-      </div>
+      <p class="text-xl text-white bg-black bg-opacity-40 py-1 px-2 rounded">
+        A JavaScript Engineer doing his best to climb the Dunning-Kruger curve.
+      </p>
     </div>
   </div>
 </template>
+
+<style>
+.landing {
+  background-image: url('/assets/space.png');
+}
+.heading {
+  background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.5;
+}
+</style>
