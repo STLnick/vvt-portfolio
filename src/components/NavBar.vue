@@ -29,7 +29,7 @@ watch(darkMode, (newSetting) => {
       <div class="flex items-center">
         <Switch
           v-model="darkMode"
-          :class="darkMode ? 'bg-teal-900' : 'bg-teal-700'"
+          :class="darkMode ? 'bg-primary-dark' : 'bg-secondary'"
           class="relative inline-flex h-6 w-11 items-center rounded-full"
         >
           <span
