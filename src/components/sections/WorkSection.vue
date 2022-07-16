@@ -23,10 +23,10 @@ const phase2Properties = {
 </script>
 
 <template>
-  <Section heading="Work" :isOdd="props.isOdd">
-      <div class="container mx-auto flex flex-col lg:flex-row items-center">
+  <Section heading="Work" caption="The things I've typed." :isOdd="props.isOdd">
+      <div class="container mx-auto flex flex-col items-center">
         <SlideFadeTransition class="my-4" :delay="400">
-          <StyledCard class="max-w-sm" :properties="phase2Properties">
+          <StyledCard class="min-w-[500px] max-w-xl" :properties="phase2Properties">
             <ul class="list-disc ml-4 px-2 flex">
               <li class="flex-auto">1</li>
               <li class="flex-auto">2</li>

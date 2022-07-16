@@ -1,18 +1,23 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { DARK_MODE_COOKIE, getCookie, setCookie } from '@/utils';
+import { DARK_MODE_COOKIE, getCookie, setCookie, toggleDarkClass } from '@/utils';
 import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue';
 import MoonSVG from '@/icons/MoonSVG.vue';
 
 const darkMode = ref( getCookie(DARK_MODE_COOKIE) === 'true' );
+toggleDarkClass(darkMode.value);
 
 watch(darkMode, (newSetting) => {
+  toggleDarkClass(newSetting);
   setCookie(DARK_MODE_COOKIE, newSetting ? 'true' : 'false');
 });
 </script>
 
 <template>
-  <div class="w-screen bg-emerald-500 py-3 px-6 text-lg tracking-wide flex justify-between">
+  <div
+    id="nav-bar"
+    class="transition-colors w-screen bg-primary dark:bg-secondary-dark py-3 px-6 text-lg tracking-wide flex justify-between"
+  >
     <div>
       <ul class="flex text-white">
         <li class="mr-6">Work</li>
@@ -20,7 +25,7 @@ watch(darkMode, (newSetting) => {
         <li>Fun</li>
       </ul>
     </div>
-    <SwitchGroup>
+    <SwitchGroup class="transition-all">
       <div class="flex items-center">
         <Switch
           v-model="darkMode"
