@@ -36,7 +36,7 @@ const layoutStyles = computed(() => LAYOUT_STYLES[layoutKey.value]);
       <BriefcaseSVG class="h-12 w-12 text-white" />
     </div>
 
-    <div :class="`bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded flex grow flex-col justify-between leading-normal shadow-lg' ${layoutStyles.contentWrapper}`">
+    <div :class="`bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded flex grow flex-col justify-between leading-normal shadow-lg ${layoutStyles.contentWrapper}`">
       <div class="mb-8">
         <!-- Top caption -->
         <p v-if="topCaption" class="text-sm text-secondary flex items-center">
