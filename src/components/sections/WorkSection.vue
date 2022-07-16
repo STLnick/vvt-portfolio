@@ -23,7 +23,7 @@ const phase2Properties = {
 </script>
 
 <template>
-  <Section heading="Work" :isOdd="props.isOdd">
+  <Section heading="Work" caption="" :isOdd="props.isOdd">
       <div class="container mx-auto flex flex-col lg:flex-row items-center">
         <SlideFadeTransition class="my-4" :delay="400">
           <StyledCard class="max-w-sm" :properties="phase2Properties">
