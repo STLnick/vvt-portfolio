@@ -8,7 +8,7 @@ import { FunSection, Hero, MeSection, WorkSection } from '@/components/sections'
 
   <WorkSection />
 
-  <MeSection :isOdd="true" />
+  <MeSection />
 
   <FunSection />
   

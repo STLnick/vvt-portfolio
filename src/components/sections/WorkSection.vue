@@ -26,8 +26,9 @@ const phase2Properties = {
 <template>
   <Section heading="Work" caption="The things I've typed." :isOdd="props.isOdd">
       <div class="container mx-auto flex flex-col items-center">
-        <SlideFadeTransition class="my-4" :delay="400">
-          <StyledCard class="min-w-[500px] max-w-xl" :properties="phase2Properties">
+        <!-- Curate Platform -->
+        <SlideFadeTransition class="my-8" :delay="400">
+          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties">
             <ul class="list-disc ml-4 px-2 flex">
               <li class="flex-auto">1</li>
               <li class="flex-auto">2</li>
@@ -35,9 +36,12 @@ const phase2Properties = {
             </ul>
           </StyledCard>
         </SlideFadeTransition>
+
+        <!-- Curate Classic -->
         <SlideFadeTransition class="my-4" :delay="400">
-          <StyledCard class="max-w-sm" :properties="phase1Properties" />
+          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase1Properties" />
         </SlideFadeTransition>
+
       </div>
   </Section>
 </template>
