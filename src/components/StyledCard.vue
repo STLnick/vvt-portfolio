@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import BreifcaseSVG from '@/icons/BreifcaseSVG.vue';
+import BriefcaseSVG from '@/icons/BriefcaseSVG.vue';
 
 // Props
 const props = defineProps([ 'properties' ]);
@@ -16,7 +16,7 @@ const footerText = computed(() => properties.value.footerText || '');
 <template>
   <div class="max-w-sm w-full lg:max-w-xl flex flex-col lg:flex-row items-center">
     <div
-      class="relative h-32 w-32 -mb-12 sm:mb-0 mr-0 sm:-mr-12 rounded flex-none overflow-hidden flex items-center justify-center bg-primary shadow-md"
+      <BriefcaseSVG class="h-12 w-12 text-white" />
     >
       <BreifcaseSVG class="h-12 w-12 text-white" />
     </div>
