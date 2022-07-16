@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar.vue";
 
 <template>
   <div>
-    <header class="bg-white shadow" v-if="$route.meta.title">
+    <header v-if="$route.meta.title">
       <NavBar/>
     </header>
     <main>

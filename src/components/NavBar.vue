@@ -1,9 +1,14 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
+import { DARK_MODE_COOKIE, getCookie, setCookie } from '@/utils';
 import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue';
 import MoonSVG from '@/icons/MoonSVG.vue';
 
-const darkMode = ref(false);
+const darkMode = ref( getCookie(DARK_MODE_COOKIE) === 'true' );
+
+watch(darkMode, (newSetting) => {
+  setCookie(DARK_MODE_COOKIE, newSetting ? 'true' : 'false');
+});
 </script>
 
 <template>
