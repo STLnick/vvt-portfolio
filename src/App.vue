@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <header v-if="$route.meta.title">
+    <header v-if="$route.meta.title" class="sticky top-0 z-10">
       <NavBar/>
     </header>
     <main>
