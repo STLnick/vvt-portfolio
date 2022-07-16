@@ -11,13 +11,14 @@ const isShowing = ref(true);
 const phase1Properties = {
   content: 'My first full-time development position. This incredible Business Management application is a medley of Wordpress, PHP/Laravel, and React deployed on a traditional server but eventually incorporating AWS Services as well.',
   footerText: 'Nov 2020 - Apr 2021',
-  heading: 'Curate - Curate Platform',
+  heading: 'Curate - Curate Classic',
   topCaption: 'Full Stack Developer',
+  right: true,
 };
 const phase2Properties = {
   content: 'A second chapter in my time with the company. We began rebuilding the application entirely using Vue, Vuetify and AWS Services.',
   footerText: 'May 2021 - Present',
-  heading: 'Curate - Curate Classic',
+  heading: 'Curate - Curate Platform',
   topCaption: 'Software Engineer II',
 };
 </script>
