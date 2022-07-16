@@ -10,7 +10,7 @@ const background = props.isOdd ? 'bg-gray-300' : 'bg-gray-50';
     <h2 class="text-4xl text-emerald-600 underline underline-offset-4 tracking-widest">
       {{ heading }}
     </h2>
-    <caption class="">
+    <caption class="block text-left mt-2 text-sm text-secondary">
       {{ caption }}
     </caption>
     <slot />

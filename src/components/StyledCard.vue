@@ -21,31 +21,33 @@ const footerText = computed(() => properties.value.footerText || '');
       <BreifcaseSVG class="h-12 w-12 text-white" />
     </div>
 
-    <div class="bg-white p-4 pt-16 w-1/2 sm:pt-4 pl-4 sm:pl-16 rounded flex flex-col justify-between leading-normal shadow-lg">
+    <div class="bg-white p-4 pt-16 w-1/2 sm:pt-4 pl-4 sm:pl-16 rounded flex grow flex-col justify-between leading-normal shadow-lg">
       <div class="mb-8">
         <!-- Top caption -->
-        <p v-if="topCaption" class="text-sm text-gray-600 flex items-center">
+        <p v-if="topCaption" class="text-sm text-secondary flex items-center">
           {{ topCaption }}
         </p>
 
         <!-- Heading  -->
-        <div v-if="heading" class="text-gray-900 font-bold text-xl mb-2">
+        <div v-if="heading" class="text-secondary-dark font-bold text-xl mb-2">
           {{ heading }}
         </div>
 
         <!-- Content text -->
-        <p v-if="content" class="text-gray-700 text-base">
+        <p v-if="content" class="text-secondary">
           {{ content }}
         </p>
 
         <!-- Default slot content -->
-        <slot />
+        <div class="text-secondary">
+          <slot />
+        </div>
       </div>
 
       <!-- Footer content -->
       <div v-if="footerText" class="flex items-center">
         <div class="text-sm">
-          <p class="text-gray-900 leading-none">
+          <p class="text-secondary-light leading-none">
             {{footerText}}
           </p>
         </div>
