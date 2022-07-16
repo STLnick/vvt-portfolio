@@ -14,7 +14,10 @@ watch(darkMode, (newSetting) => {
 </script>
 
 <template>
-  <div class="w-screen bg-emerald-500 py-3 px-6 text-lg tracking-wide flex justify-between">
+  <div
+    id="nav-bar"
+    class="transition-colors w-screen bg-primary dark:bg-secondary-dark py-3 px-6 text-lg tracking-wide flex justify-between"
+  >
     <div>
       <ul class="flex text-white">
         <li class="mr-6">Work</li>
@@ -22,7 +25,7 @@ watch(darkMode, (newSetting) => {
         <li>Fun</li>
       </ul>
     </div>
-    <SwitchGroup>
+    <SwitchGroup class="transition-all">
       <div class="flex items-center">
         <Switch
           v-model="darkMode"
