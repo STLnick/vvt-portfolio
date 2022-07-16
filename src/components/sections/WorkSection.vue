@@ -28,13 +28,7 @@ const phase2Properties = {
       <div class="container mx-auto flex flex-col items-center">
         <!-- Curate Platform -->
         <SlideFadeTransition class="my-8" :delay="400">
-          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties">
-            <ul class="list-disc ml-4 px-2 flex">
-              <li class="flex-auto">1</li>
-              <li class="flex-auto">2</li>
-              <li class="flex-auto">3</li>
-            </ul>
-          </StyledCard>
+          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties" />
         </SlideFadeTransition>
 
         <!-- Curate Classic -->
