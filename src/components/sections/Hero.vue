@@ -10,13 +10,13 @@ import SlideFadeTransition from '@/transitions/SlideFade.vue';
         <div class="text-center">
           <SlideFadeTransition :delay="400">
             <h2
-              class="transition-all text-shadow-dark dark:text-shadow-light leading-normal text-primary-dark rounded-lg dark:text-primary bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 sm:text-6xl md:text-7xl md:leading-normal font-bold mb-2 drop-shadow-lg"
+              class="transition-all text-shadow-dark dark:text-shadow-light leading-normal text-primary-dark rounded-md dark:text-primary bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 sm:text-6xl md:text-7xl md:leading-normal font-bold mb-2 drop-shadow-lg"
             >
               Nick Ray
             </h2>
           </SlideFadeTransition>
           <SlideFadeTransition :delay="550">
-            <p class="transition-all text-lg sm:text-xl text-secondary-dark bg-white dark:text-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 py-1 px-2 rounded">
+            <p class="transition-all text-lg sm:text-xl text-secondary-dark bg-white dark:text-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 py-1 px-2 rounded-md">
               A JavaScript Engineer somewhere on the Dunning-Kruger curve.
             </p>
           </SlideFadeTransition>
