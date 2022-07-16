@@ -1,12 +1,14 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { DARK_MODE_COOKIE, getCookie, setCookie } from '@/utils';
+import { DARK_MODE_COOKIE, getCookie, setCookie, toggleDarkClass } from '@/utils';
 import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue';
 import MoonSVG from '@/icons/MoonSVG.vue';
 
 const darkMode = ref( getCookie(DARK_MODE_COOKIE) === 'true' );
+toggleDarkClass(darkMode.value);
 
 watch(darkMode, (newSetting) => {
+  toggleDarkClass(newSetting);
   setCookie(DARK_MODE_COOKIE, newSetting ? 'true' : 'false');
 });
 </script>
