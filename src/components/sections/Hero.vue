@@ -32,5 +32,6 @@ import SlideFadeTransition from '@/transitions/SlideFade.vue';
 }
 .dark .landing {
   background-image: url('/assets/dark-space.jpg');
+  mask-image: unset;
 }
 </style>
