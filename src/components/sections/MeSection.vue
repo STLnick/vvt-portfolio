@@ -17,19 +17,19 @@ import BadgeCheckSVG from '@/icons/BadgeCheckSVG.vue';
 
       <div class="bg-primary-dark p-3 py-4 rounded shadow-lg mb-8 flex items-center justify-center">
         <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center min-w-[500px] max-w-md sm:max-w-xl text-white">
+        <p class="flex justify-center w-72 sm:w-96 text-white">
           Will help with nearly anything with the right amount of tacos and/or coffee offered
         </p>
       </div>
       <div class="bg-primary-dark p-3 py-4 rounded shadow-lg mb-8 flex items-center justify-center">
         <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center min-w-[500px] max-w-md sm:max-w-xl text-white items-center">
+        <p class="flex justify-center w-72 sm:w-96 text-white items-center">
           Member of the Countless Neglected Hobbies club. 
         </p>
       </div>
       <div class="bg-primary-dark p-3 py-4 rounded shadow-lg flex items-center justify-center">
         <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center min-w-[500px] max-w-md sm:max-w-xl text-white items-center">
+        <p class="flex justify-center w-72 sm:w-96 text-white items-center">
           Frequently say "I'm keeping this because I'll be able to use it one day..."
         </p>
       </div>
