@@ -8,7 +8,7 @@ const props = defineProps([ 'caption', 'heading' ]);
       <h2 class="text-4xl text-primary-dark dark:text-primary-light underline underline-offset-4 tracking-widest">
         {{ heading }}
       </h2>
-      <caption class="block text-left mt-2 mb-8 text-sm text-secondary dark:text-accent-light">
+      <caption class="block text-left mt-2 mb-12 text-sm text-accent-dark dark:text-accent-light">
         {{ caption }}
       </caption>
       <slot />
