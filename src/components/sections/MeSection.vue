@@ -3,7 +3,7 @@ import Section from './Section.vue';
 </script>
 
 <template>
-  <Section heading="Me" caption="Myself and I." />
+  <Section id="me-section" heading="Me" caption="Myself and I." >
 </template>
 
 <style>

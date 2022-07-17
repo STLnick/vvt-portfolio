@@ -12,6 +12,10 @@ watch(darkMode, (newSetting) => {
   toggleDarkClass(newSetting);
   setCookie(DARK_MODE_COOKIE, newSetting ? 'true' : 'false');
 });
+
+const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -19,13 +23,30 @@ watch(darkMode, (newSetting) => {
     id="nav-bar"
     class="transition-colors w-screen bg-primary dark:bg-secondary-dark py-3 px-6 text-lg tracking-wide flex justify-between"
   >
+    <!-- Left Side -->
     <div>
       <ul class="flex text-white">
-        <li class="mr-6">Work</li>
-        <li class="mr-6">Me</li>
-        <li>Fun</li>
+        <li
+          @click="scrollToSection('work-section')"
+          class="mr-6 cursor-pointer hover:underline hover:underline-offset-2"
+        >
+          Work
+        </li>
+        <li
+          @click="scrollToSection('me-section')"
+          class="mr-6 cursor-pointer hover:underline hover:underline-offset-2"
+        >
+          Me
+        </li>
+        <li
+          @click="scrollToSection('fun-section')"
+          class="cursor-pointer hover:underline hover:underline-offset-2"
+        >
+          Fun
+        </li>
       </ul>
     </div>
+    <!-- Right side -->
     <SwitchGroup class="transition-all">
       <div class="flex items-center">
         <Switch
