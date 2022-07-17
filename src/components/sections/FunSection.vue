@@ -61,6 +61,8 @@ const categories = ref({
         </Tab>
       </TabList>
 
+      <div class="w-full p-px mt-1 bg-accent-light"></div>
+
       <TabPanels class="mt-2">
         <TabPanel
           v-for="(posts, idx) in Object.values(categories)"
