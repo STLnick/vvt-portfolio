@@ -51,7 +51,7 @@ const scrollToSection = (id) => {
       </ul>
     </div>
     <!-- Right side -->
-    <SwitchGroup class="transition-all">
+    <SwitchGroup class="transition-all mr-4">
       <div class="flex items-center">
         <Switch
           v-model="darkMode"
@@ -63,9 +63,15 @@ const scrollToSection = (id) => {
             class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform"
           />
         </Switch>
-        <SwitchLabel class="text-sm italic pl-2">
-          <MoonSVG v-show="darkMode" class="text-white transition-all" />
-          <SunSVG v-show="!darkMode" class="text-white transition-all" />
+        <SwitchLabel class="text-sm italic pl-2 relative">
+          <MoonSVG
+            :class="darkMode ? '' : 'translate-x-12'"
+            class="absolute left-2 top-0 -translate-y-1/2 text-white transition ease-in-out delay-150"
+          />
+          <SunSVG
+            :class="darkMode ? 'translate-x-12' : ''"
+            class="absolute left-2 top-0 -translate-y-1/2 text-white transition ease-in-out delay-150"
+          />
         </SwitchLabel>
       </div>
     </SwitchGroup>
