@@ -21,7 +21,11 @@ const scrollToSection = (id) => {
 <template>
   <div
     id="nav-bar"
-    class="transition-colors w-screen bg-primary dark:bg-secondary-dark py-3 px-6 text-lg tracking-wide flex justify-between"
+    :class="[
+      'w-screen py-3 px-6 text-lg tracking-wide',
+      'transition-colors bg-primary dark:bg-secondary-dark',
+      'flex justify-between',
+    ]"
   >
     <!-- Left Side -->
     <div>

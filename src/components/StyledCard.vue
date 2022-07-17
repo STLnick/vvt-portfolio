@@ -32,11 +32,24 @@ const layoutStyles = computed(() => LAYOUT_STYLES[layoutKey.value]);
 
 <template>
   <div :class="`flex flex-col items-center ${layoutStyles.container}`">
-    <div :class="`relative h-32 w-32 -mb-12 sm:mb-0 rounded flex-none overflow-hidden flex items-center justify-center bg-primary shadow-md ${layoutStyles.iconWrapper}`">
+    <div
+      :class="[
+        'relative h-32 w-32 rounded bg-primary shadow-md',
+        'flex-none overflow-hidden flex items-center justify-center',
+        '-mb-12 sm:mb-0',
+        layoutStyles.iconWrapper
+      ]"
+    >
       <BriefcaseSVG class="h-12 w-12 text-white" />
     </div>
 
-    <div :class="`bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded flex grow flex-col justify-between leading-normal shadow-lg ${layoutStyles.contentWrapper}`">
+    <div
+      :class="[
+        'bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded leading-normal shadow-lg',
+        'flex grow flex-col justify-between',
+        layoutStyles.contentWrapper
+      ]"
+    >
       <div class="mb-8">
         <!-- Top caption -->
         <p v-if="topCaption" class="text-sm text-secondary flex items-center">
