@@ -24,18 +24,16 @@ const phase2Properties = {
 </script>
 
 <template>
-  <Section heading="Work" caption="The things I've typed." :isOdd="props.isOdd">
+  <Section id="work-section" heading="Work" caption="The things I've typed.">
       <div class="container mx-auto flex flex-col items-center">
         <!-- Curate Platform -->
         <SlideFadeTransition class="my-8" :delay="400">
           <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties" />
         </SlideFadeTransition>
-
         <!-- Curate Classic -->
         <SlideFadeTransition class="my-4" :delay="400">
           <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase1Properties" />
         </SlideFadeTransition>
-
       </div>
   </Section>
 </template>
