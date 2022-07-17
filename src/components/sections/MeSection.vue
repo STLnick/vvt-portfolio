@@ -13,7 +13,7 @@ import BadgeCheckSVG from '@/icons/BadgeCheckSVG.vue';
         That also sometimes likes to go on rides with anything that has two wheels, make stuff outta wood and read some books.
       </p>
 
-      <div class="w-full p-px mt-6 mb-12 bg-accent"></div>
+      <div class="w-full sm:w-2/3 p-px mt-6 mb-12 bg-accent"></div>
 
       <div class="bg-primary-dark p-3 py-4 rounded shadow-lg mb-8 flex items-center justify-center">
         <BadgeCheckSVG class="mr-2"/> 
