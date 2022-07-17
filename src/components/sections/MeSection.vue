@@ -10,7 +10,7 @@ import BadgeCheckSVG from '@/icons/BadgeCheckSVG.vue';
         A Missouri native, St. Louis city-dwelling, key-smashing, video-game playing guy.
       </p>
       <p class="min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white my-8 text-xl">
-        That also sometimes likes to go on rides with anything that has two wheels, make stuff outta wood and read some books.
+        That also likes to go on rides with anything that has two wheels, make stuff outta wood and read some books.
       </p>
 
       <div class="w-full sm:w-2/3 p-px mt-6 mb-12 bg-accent"></div>
