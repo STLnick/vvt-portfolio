@@ -3,10 +3,11 @@ import { ref, watch } from 'vue';
 import { DARK_MODE_COOKIE, getCookie, setCookie, toggleDarkClass } from '@/utils';
 import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue';
 import MoonSVG from '@/icons/MoonSVG.vue';
+import SunSVG from '@/icons/SunSVG.vue';
 
+// Dark Mode
 const darkMode = ref( getCookie(DARK_MODE_COOKIE) === 'true' );
-toggleDarkClass(darkMode.value);
-
+toggleDarkClass(darkMode.value); // Set dark mode based on cookie initially
 watch(darkMode, (newSetting) => {
   toggleDarkClass(newSetting);
   setCookie(DARK_MODE_COOKIE, newSetting ? 'true' : 'false');
@@ -38,7 +39,8 @@ watch(darkMode, (newSetting) => {
           />
         </Switch>
         <SwitchLabel class="text-sm italic pl-2">
-          <MoonSVG class="text-white" :class="{ filled: darkMode }" />
+          <MoonSVG v-show="darkMode" class="text-white transition-all" />
+          <SunSVG v-show="!darkMode" class="text-white transition-all" />
         </SwitchLabel>
       </div>
     </SwitchGroup>
