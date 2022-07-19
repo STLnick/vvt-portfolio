@@ -52,8 +52,8 @@ const categories = ref({
               'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary',
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2',
               selected
-                ? 'bg-white shadow'
-                : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+                ? 'bg-white dark:bg-secondary-light/60 shadow'
+                : 'text-gray-100 dark:text-secondary-lightest hover:bg-white/[0.12] hover:text-white dark:hover:text-white',
             ]"
           >
             {{ category }}
@@ -65,16 +65,16 @@ const categories = ref({
 
       <TabPanels class="mt-2">
         <TabPanel
-          v-for="(posts, idx) in Object.values(categories)"
+          v-for="(items, idx) in Object.values(categories)"
           :key="idx"
           :class="[
-            'rounded-xl bg-white p-3',
-            'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+            'rounded-xl bg-white dark:bg-secondary p-3',
+            'ring-white ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2',
           ]"
         >
           <ul>
-            <template v-for="(post, i) in posts" :key="`${post.id}-${i}`">
-              <TabPanelItem :post="post" />
+            <template v-for="(item, i) in items" :key="`${item.id}-${i}`">
+              <TabPanelItem :item="item" />
             </template>
           </ul>
         </TabPanel>
