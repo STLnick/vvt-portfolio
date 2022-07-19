@@ -24,7 +24,7 @@ const scrollToSection = (id) => {
     :class="[
       'w-screen py-3 px-6 text-lg tracking-wide',
       'transition-colors bg-primary dark:bg-secondary-dark',
-      'flex justify-between',
+      'flex justify-between overflow-hidden',
     ]"
   >
     <!-- Left Side -->
