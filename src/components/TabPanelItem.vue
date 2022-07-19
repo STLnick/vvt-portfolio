@@ -7,20 +7,21 @@ import {
 import { ChevronUpIcon } from '@heroicons/vue/solid';
 import { TransitionRoot } from '@headlessui/vue'
 
-const props = defineProps([ 'post' ]);
-const post = props.post;
+const props = defineProps([ 'item' ]);
+const item = props.item;
 </script>
 
 <template>
   <Disclosure v-slot="{ open }">
     <div class="p-4">
       <!-- Panel activator -->
-      <DisclosureButton class="py-2 flex">
-        Concentration Game
+      <DisclosureButton class="w-full py-2 flex items-center dark:text-accent-light">
+        <span class="basis-auto">{{ item.title }}</span>
         <ChevronUpIcon
           :class="open ? 'rotate-180 transform' : ''"
-          class="h-5 w-5 fill-secondary-dark transition-all"
+          class="h-9 w-9 mx-2 fill-secondary-dark dark:fill-accent-light transition-all"
         />
+        <div class="w-2/3 p-px grow bg-secondary-lightest"></div>
       </DisclosureButton>
       <!-- Expanded content -->
       <TransitionRoot
@@ -32,8 +33,8 @@ const post = props.post;
         leave-from="opacity-100"
         leave-to="opacity-0"
       >
-        <DisclosurePanel class="text-gray-500 transition-all px-12">
-          A simple card game of Concentration built using React, Node and MongoDB. High scores are recorded locally and were persisted in a database until atrophy shut it down.
+        <DisclosurePanel class="text-gray-500 border-l-2 border-l-secondary-light dark:text-secondary-lightest transition-all ml-4 pl-2 pr-8">
+          {{ item.content.text }}
         </DisclosurePanel>
       </TransitionRoot>
     </div>
