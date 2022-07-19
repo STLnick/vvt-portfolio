@@ -13,23 +13,28 @@ import TabPanelItem from '../TabPanelItem.vue';
 
 const categories = ref({
   Coding: [
-    // TODO: Replace with items that I've done that are fun/silly/interesting in coding
     {
       id: 1,
-      title: 'Does drinking coffee make you smarter?',
-      date: '5h ago',
-      commentCount: 5,
-      shareCount: 2,
+      title: 'Concentration Game',
+      content: {
+        text: 'A simple card game of Concentration built using React, Node and MongoDB. High scores are recorded locally and were persisted in a database until atrophy shut it down.',
+      },
     },
   ],
   Woodworking: [
-    // TODO: Replace with items that I've done that are fun/silly/interesting in Woodworking
     {
       id: 1,
-      title: 'Is tech making coffee better or worse?',
-      date: 'Jan 7',
-      commentCount: 29,
-      shareCount: 16,
+      title: '"Foldable" Chair',
+      content: {
+        text: 'A 2-piece chair that can have the seat slide in the top of the back support for storage. Slide the seat supports through the slot below the backrest and just sit down.',
+      }
+    },
+    {
+      id: 2,
+      title: 'Footstool',
+      content: {
+        text: 'This is about as far from \'pretty\' as you can get. That said this stool has been in service for over 10 years. It\'s due for some TLC  but it does good for me every day.',
+      }
     },
   ],
 });
