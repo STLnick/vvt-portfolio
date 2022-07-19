@@ -23,3 +23,9 @@ onMounted(() => {
     </main>
   </div>
 </template>
+
+<style>
+#app {
+  @apply text-secondary-dark;
+}
+</style>
