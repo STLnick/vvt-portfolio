@@ -13,23 +13,28 @@ import TabPanelItem from '../TabPanelItem.vue';
 
 const categories = ref({
   Coding: [
-    // TODO: Replace with items that I've done that are fun/silly/interesting in coding
     {
       id: 1,
-      title: 'Does drinking coffee make you smarter?',
-      date: '5h ago',
-      commentCount: 5,
-      shareCount: 2,
+      title: 'Concentration Game',
+      content: {
+        text: 'A simple card game of Concentration built using React, Node and MongoDB. High scores are recorded locally and were persisted in a database until atrophy shut it down.',
+      },
     },
   ],
   Woodworking: [
-    // TODO: Replace with items that I've done that are fun/silly/interesting in Woodworking
     {
       id: 1,
-      title: 'Is tech making coffee better or worse?',
-      date: 'Jan 7',
-      commentCount: 29,
-      shareCount: 16,
+      title: '"Foldable" Chair',
+      content: {
+        text: 'A 2-piece chair that can have the seat slide in the top of the back support for storage. Slide the seat supports through the slot below the backrest and just sit down.',
+      }
+    },
+    {
+      id: 2,
+      title: 'Footstool',
+      content: {
+        text: 'This is about as far from \'pretty\' as you can get. That said this stool has been in service for over 10 years. It\'s due for some TLC  but it does good for me every day.',
+      }
     },
   ],
 });
@@ -52,8 +57,8 @@ const categories = ref({
               'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary',
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2',
               selected
-                ? 'bg-white shadow'
-                : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+                ? 'bg-white dark:bg-secondary-light/60 shadow'
+                : 'text-gray-100 dark:text-secondary-lightest hover:bg-white/[0.12] hover:text-white dark:hover:text-white',
             ]"
           >
             {{ category }}
@@ -61,18 +66,20 @@ const categories = ref({
         </Tab>
       </TabList>
 
+      <div class="w-full p-px mt-1 bg-accent-light"></div>
+
       <TabPanels class="mt-2">
         <TabPanel
-          v-for="(posts, idx) in Object.values(categories)"
+          v-for="(items, idx) in Object.values(categories)"
           :key="idx"
           :class="[
-            'rounded-xl bg-white p-3',
-            'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+            'rounded-xl bg-white dark:bg-secondary p-3',
+            'ring-white ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2',
           ]"
         >
           <ul>
-            <template v-for="(post, i) in posts" :key="`${post.id}-${i}`">
-              <TabPanelItem :post="post" />
+            <template v-for="(item, i) in items" :key="`${item.id}-${i}`">
+              <TabPanelItem :item="item" />
             </template>
           </ul>
         </TabPanel>
