@@ -2,6 +2,7 @@
 import { nextTick, onMounted } from "vue";
 import NavBar from "@/components/NavBar.vue";
 import { DARK_MODE_COOKIE, getCookie, toggleDarkClass } from "@/utils";
+import Footer from "./components/Footer.vue";
 
 onMounted(() => {
   if (
@@ -21,6 +22,7 @@ onMounted(() => {
     <main>
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
