@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "aws --profile portfolio-deployer --region us-west-2 s3 sync ./dist s3://nrr-portfolio --delete"
   },
   "dependencies": {
     "vue": "^3.2.37",

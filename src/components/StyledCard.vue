@@ -40,36 +40,37 @@ const layoutStyles = computed(() => LAYOUT_STYLES[layoutKey.value]);
         layoutStyles.iconWrapper
       ]"
     >
-      <BriefcaseSVG class="h-12 w-12 text-white" />
+      <BriefcaseSVG class="h-16 w-16 text-white" />
     </div>
 
     <div
       :class="[
-        'bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded leading-normal shadow-lg',
+        'bg-white sm:w-1/2 p-4 pt-16 sm:pt-4 rounded leading-normal shadow-lg',
         'flex grow flex-col justify-between',
+        'dark:bg-secondary-light/40',
         layoutStyles.contentWrapper
       ]"
     >
       <div class="mb-8">
         <!-- Top caption -->
-        <p v-if="topCaption" class="text-sm text-secondary flex items-center">
+        <p v-if="topCaption" class="text-sm text-secondary dark:text-secondary-lightest flex items-center">
           {{ topCaption }}
         </p>
 
         <!-- Heading  -->
-        <div v-if="heading" class="text-secondary-dark font-bold text-xl mb-2">
+        <div v-if="heading" class="text-secondary-dark dark:text-white font-bold text-xl mb-2">
           {{ heading }}
         </div>
 
         <div class="w-full p-px mb-1 bg-accent lg:w-2/3"></div>
 
         <!-- Content text -->
-        <p v-if="content" class="text-secondary">
+        <p v-if="content" class="text-secondary dark:text-secondary-lightest">
           {{ content }}
         </p>
 
         <!-- Default slot content -->
-        <div class="text-secondary">
+        <div class="text-secondary dark:text-secondary-lightest">
           <slot />
         </div>
       </div>
@@ -77,7 +78,7 @@ const layoutStyles = computed(() => LAYOUT_STYLES[layoutKey.value]);
       <!-- Footer content -->
       <div v-if="footerText" class="flex items-center">
         <div class="text-xs">
-          <p class="text-primary-dark leading-none tracking-wide">
+          <p class="text-primary-dark dark:text-primary-light leading-none tracking-wide">
             {{footerText}}
           </p>
         </div>
