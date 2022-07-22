@@ -34,7 +34,8 @@ const item = props.item;
         leave-to="opacity-0"
       >
         <DisclosurePanel class="text-gray-500 border-l-2 border-l-secondary-light dark:text-secondary-lightest transition-all ml-4 pl-2 pr-8">
-          {{ item.content.text }}
+          <a
+          <p v-html="item.content.text"></p>
         </DisclosurePanel>
       </TransitionRoot>
     </div>
