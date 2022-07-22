@@ -4,7 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue';
-import { ChevronUpIcon } from '@heroicons/vue/solid';
+import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/vue/solid';
 import { TransitionRoot } from '@headlessui/vue'
 
 const props = defineProps([ 'item' ]);
@@ -35,6 +35,17 @@ const item = props.item;
       >
         <DisclosurePanel class="text-gray-500 border-l-2 border-l-secondary-light dark:text-secondary-lightest transition-all ml-4 pl-2 pr-8">
           <a
+            v-if="item.link"
+            :class="[
+              'flex align-center mt-1 mb-2',
+              'text-primary underline decoration-primary hover:text-primary-dark hover:decoration-primary-dark',
+              'dark:text-accent dark:decoration-accent dark:hover:text-accent-dark hover:dark:decoration-accent-dark'
+            ]"
+            :href="item.link.href"
+          >
+            {{item.link.text}}
+            <ExternalLinkIcon class="h-5 w-5 my-auto fill-primary-dark dark:fill-accent-dark" />
+          </a>
           <p v-html="item.content.text"></p>
         </DisclosurePanel>
       </TransitionRoot>

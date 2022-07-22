@@ -16,6 +16,10 @@ const categories = ref({
     {
       id: 1,
       title: 'Concentration Game',
+      link: {
+        href: 'https://game-concentration.netlify.app/',
+        text: 'Play the game now'
+      },
       content: {
         text: 'A simple card game of Concentration built using <em>React</em>, <em>Node</em> and <em>MongoDB</em>. High scores are recorded locally and were persisted in a database until atrophy shut it down.',
       },
