@@ -21,7 +21,7 @@ const categories = ref({
         text: 'Play the game now'
       },
       content: {
-        text: 'A simple card game of Concentration built using <em>React</em>, <em>Node</em> and <em>MongoDB</em>. High scores are recorded locally and were persisted in a database until atrophy shut it down.',
+        text: 'A simple card game of Concentration built using <em>React</em>, <em>Node</em> and <em>MongoDB</em>. The Top 10 High scores are read from, updated and recorded in a MongoDB database.',
       },
     },
   ],
