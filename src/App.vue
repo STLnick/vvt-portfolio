@@ -27,6 +27,10 @@ onMounted(() => {
 </template>
 
 <style>
+html {
+  @apply bg-primary-dark;
+  @apply dark:bg-secondary-dark;
+}
 #app {
   @apply text-secondary-dark;
 }

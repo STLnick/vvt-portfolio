@@ -45,7 +45,7 @@ const layoutStyles = computed(() => LAYOUT_STYLES[layoutKey.value]);
 
     <div
       :class="[
-        'bg-white w-1/2 p-4 pt-16 sm:pt-4 rounded leading-normal shadow-lg',
+        'bg-white sm:w-1/2 p-4 pt-16 sm:pt-4 rounded leading-normal shadow-lg',
         'flex grow flex-col justify-between',
         'dark:bg-secondary-light/40',
         layoutStyles.contentWrapper

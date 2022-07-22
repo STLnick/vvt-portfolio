@@ -6,10 +6,10 @@ import BadgeCheckSVG from '@/icons/BadgeCheckSVG.vue';
 <template>
   <Section id="me-section" heading="Me" caption="Myself and I." >
     <div class="container mx-auto flex flex-col items-center text-center">
-      <p class="min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white mt-8 text-xl">
+      <p class="md:min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white mt-8 text-lg sm:text-xl">
         A Missouri native, St. Louis city-dwelling, key-smashing, video-game playing guy.
       </p>
-      <p class="min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white my-8 text-xl">
+      <p class="md:min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white my-8 text-lg sm:text-xl">
         That also likes to go on rides with anything that has two wheels, make stuff outta wood and read some books.
       </p>
 

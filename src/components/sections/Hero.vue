@@ -5,12 +5,17 @@ import SlideFadeTransition from '@/transitions/SlideFade.vue';
 <template>
   <div>
     <div
-      class="landing bg-black bg-center bg-no-repeat bg-cover h-screen transition-all px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-center lg:flex-col lg:py-16 lg:px-8"
+      class="landing bg-black bg-center bg-no-repeat bg-cover h-screen transition-all px-4 py-12 sm:px-6 flex items-center justify-center lg:py-16 lg:px-8"
     >
         <div class="text-center">
           <SlideFadeTransition :delay="400">
             <h2
-              class="transition-all text-shadow-dark dark:text-shadow-light leading-normal text-primary-dark rounded-md dark:text-primary bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 sm:text-6xl md:text-7xl md:leading-normal font-bold mb-2 drop-shadow-lg"
+              :class="[
+                'transition-all text-shadow-dark dark:text-shadow-light',
+                'leading-normal text-primary-dark rounded-md dark:text-primary',
+                'bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40',
+                'text-6xl md:text-7xl md:leading-normal font-bold mb-2 drop-shadow-lg',
+              ]"
             >
               Nick Ray
             </h2>

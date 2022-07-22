@@ -28,11 +28,11 @@ const phase2Properties = {
       <div class="container mx-auto flex flex-col items-center">
         <!-- Curate Platform -->
         <SlideFadeTransition class="my-8" :delay="400">
-          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties" />
+          <StyledCard class="md:min-w-[500px] max-w-md sm:max-w-xl" :properties="phase2Properties" />
         </SlideFadeTransition>
         <!-- Curate Classic -->
         <SlideFadeTransition class="my-4" :delay="400">
-          <StyledCard class="min-w-[500px] max-w-md sm:max-w-xl" :properties="phase1Properties" />
+          <StyledCard class="md:min-w-[500px] max-w-md sm:max-w-xl" :properties="phase1Properties" />
         </SlideFadeTransition>
       </div>
   </Section>
