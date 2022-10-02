@@ -1,10 +1,10 @@
 # Portfolio a la Vue
 
-This is me trying to rebuild my portfolio site using Vue 3, Vite, Headless UI and Tailwind.
+**Ingredients**: Vue 3, Vite, Headless UI and Tailwind
 
-## TODOs
+Just wanted to get some reps in using Vue 3 and Tailwind mainly. Headless UI turned out to be a pretty awesome component library that had the simple things I needed for my portfolio. Vite is also _very fast_ and I definitely dig it.
 
-- [ ] Make TODOs list
+Granted this is a small portfolio site not a production app 🤷‍♂️
 
 ---
 
