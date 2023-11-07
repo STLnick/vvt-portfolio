@@ -1,4 +1,4 @@
-export { default as FunSection } from './FunSection.vue';
-export { default as Hero } from './Hero.vue';
-export { default as MeSection } from './MeSection.vue';
-export { default as WorkSection } from './WorkSection.vue';
+export { default as FunSection } from "./FunSection.vue";
+export { default as Hero } from "./Hero.vue";
+export { default as MeSection } from "./MeSection.vue";
+export { default as WorkSection } from "./WorkSection.vue";

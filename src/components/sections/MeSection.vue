@@ -1,42 +1,52 @@
 <script setup>
-import Section from './Section.vue';
-import BadgeCheckSVG from '@/icons/BadgeCheckSVG.vue';
+import Section from "./Section.vue";
+import BadgeCheckSVG from "@/icons/BadgeCheckSVG.vue";
 </script>
 
 <template>
-  <Section id="me-section" heading="Me" caption="Myself and I." >
+  <Section id="me-section" heading="Me" caption="Myself and I.">
     <div class="container mx-auto flex flex-col items-center text-center">
-      <p class="md:min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white mt-8 text-lg sm:text-xl">
-        A Missouri native, St. Louis city-dwelling, key-smashing, video-game playing guy.
+      <p
+        class="mt-8 max-w-md text-lg text-secondary dark:text-white sm:max-w-xl sm:text-xl md:min-w-[500px]"
+      >
+        A Missouri native, St. Louis city-dwelling, key-smashing, video-game
+        playing guy.
       </p>
-      <p class="md:min-w-[500px] max-w-md sm:max-w-xl text-secondary dark:text-white my-8 text-lg sm:text-xl">
-        That also likes to go on rides with anything that has two wheels, make stuff outta wood and read some books.
+      <p
+        class="my-8 max-w-md text-lg text-secondary dark:text-white sm:max-w-xl sm:text-xl md:min-w-[500px]"
+      >
+        That also likes to go on rides with anything that has two wheels, make
+        stuff outta wood and read some books.
       </p>
 
-      <div class="w-full sm:w-2/3 p-px mt-6 mb-12 bg-accent"></div>
+      <div class="mt-6 mb-12 w-full bg-accent p-px sm:w-2/3"></div>
 
-      <div class="bg-primary-dark p-3 py-4 rounded shadow-lg mb-8 flex items-center justify-center">
-        <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center w-72 sm:w-96 text-white">
-          Will help with nearly anything with the right amount of tacos and/or coffee offered
+      <div
+        class="mb-8 flex items-center justify-center rounded bg-primary-dark p-3 py-4 shadow-lg"
+      >
+        <BadgeCheckSVG class="mr-2" />
+        <p class="flex w-72 justify-center text-white sm:w-96">
+          Will help with nearly anything with the right amount of tacos and/or
+          coffee offered
         </p>
       </div>
-      <div class="bg-primary-dark p-3 py-4 rounded shadow-lg mb-8 flex items-center justify-center">
-        <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center w-72 sm:w-96 text-white items-center">
-          Member of the Countless Neglected Hobbies club. 
+      <div
+        class="mb-8 flex items-center justify-center rounded bg-primary-dark p-3 py-4 shadow-lg"
+      >
+        <BadgeCheckSVG class="mr-2" />
+        <p class="flex w-72 items-center justify-center text-white sm:w-96">
+          Member of the Countless Neglected Hobbies club.
         </p>
       </div>
-      <div class="bg-primary-dark p-3 py-4 rounded shadow-lg flex items-center justify-center">
-        <BadgeCheckSVG class="mr-2"/> 
-        <p class="flex justify-center w-72 sm:w-96 text-white items-center">
-          Frequently say "I'm keeping this because I'll be able to use it one day..."
+      <div
+        class="flex items-center justify-center rounded bg-primary-dark p-3 py-4 shadow-lg"
+      >
+        <BadgeCheckSVG class="mr-2" />
+        <p class="flex w-72 items-center justify-center text-white sm:w-96">
+          Frequently say "I'm keeping this because I'll be able to use it one
+          day..."
         </p>
       </div>
     </div>
   </Section>
 </template>
-
-<style>
-
-</style>

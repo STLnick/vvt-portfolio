@@ -1,9 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-const props = defineProps([ 'delay' ]);
+import { ref } from "vue";
+const props = defineProps(["delay"]);
 
 const show = ref(false);
-setTimeout(() => show.value = true, props.delay || 400);
+setTimeout(() => (show.value = true), props.delay || 400);
 </script>
 
 <template>

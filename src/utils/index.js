@@ -4,7 +4,7 @@
  * @returns {string|null} Value of retrieved cookie
  */
 export const getCookie = (key) => {
-    return localStorage.getItem(key);
+  return localStorage.getItem(key);
 };
 
 /**
@@ -13,7 +13,7 @@ export const getCookie = (key) => {
  * @param {string} val Value to set cookie with
  */
 export const setCookie = (key, val) => {
-    localStorage.setItem(key, val);
+  localStorage.setItem(key, val);
 };
 
 /**
@@ -22,8 +22,8 @@ export const setCookie = (key, val) => {
  * @description Add or remove dark class from App component
  */
 export const toggleDarkClass = (isDark) => {
-    if (isDark) document.getElementById('app').classList.add('dark');
-    else document.getElementById('app').classList.remove('dark');
+  if (isDark) document.getElementById("app").classList.add("dark");
+  else document.getElementById("app").classList.remove("dark");
 };
 
-export const DARK_MODE_COOKIE = 'nr-dark-mode';
+export const DARK_MODE_COOKIE = "nr-dark-mode";
