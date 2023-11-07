@@ -24,7 +24,7 @@ import SlideFadeTransition from "@/transitions/SlideFade.vue";
           <p
             class="rounded-md bg-white bg-opacity-40 py-1 px-2 text-lg text-secondary-dark transition-all dark:bg-black dark:bg-opacity-40 dark:text-white sm:text-xl"
           >
-            A JavaScript Engineer somewhere on the Dunning-Kruger curve.
+            A Software Engineer somewhere on the Dunning-Kruger curve.
           </p>
         </SlideFadeTransition>
       </div>
