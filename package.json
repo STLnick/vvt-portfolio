@@ -8,7 +8,7 @@
     "deploy": "aws --profile portfolio-deployer --region us-west-2 s3 sync ./dist s3://nrr-portfolio --delete"
   },
   "dependencies": {
-    "vue": "^3.2.40",
+    "vue": "^3.3.8",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
