@@ -18,8 +18,8 @@ export const setCookie = (key, val) => {
 
 /**
  *
- * @param {Boolean} isDark Whether or not to apply dark mode class
  * @description Add or remove dark class from App component
+ * @param {Boolean} isDark Whether or not to apply dark mode class
  */
 export const toggleDarkClass = (isDark) => {
   if (isDark) document.getElementById("app").classList.add("dark");

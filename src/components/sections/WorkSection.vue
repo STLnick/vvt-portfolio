@@ -21,7 +21,7 @@ const phase2Properties = {
   topCaption: "Software Engineer II",
 };
 const resumeUrl =
-  "https://drive.google.com/file/d/14a6I_9dMOyKdws7TJ5T3S-PoxPZZURpB/view?usp=sharing";
+  "https://drive.google.com/file/d/1riCifV0WlTqu2JqIgVoEeWssPhHGJk8p/view";
 </script>
 
 <template>

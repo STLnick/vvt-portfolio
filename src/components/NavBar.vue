@@ -7,6 +7,7 @@ import {
   toggleDarkClass,
 } from "@/utils";
 import { Switch, SwitchGroup, SwitchLabel } from "@headlessui/vue";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/20/solid";
 import MoonSVG from "@/icons/MoonSVG.vue";
 import SunSVG from "@/icons/SunSVG.vue";
 
@@ -48,9 +49,14 @@ const scrollToSection = (id) => {
         </li>
         <li
           @click="scrollToSection('fun-section')"
-          class="cursor-pointer hover:underline hover:underline-offset-2"
+          class="mr-6 cursor-pointer hover:underline hover:underline-offset-2"
         >
           Fun
+        </li>
+        <li class="cursor-pointer hover:underline hover:underline-offset-2">
+          <a href="https://arcade.itsnickray.com" class="group flex items-center" target="_blank">
+            Arcade <ArrowTopRightOnSquareIcon class="transition-all group-hover:mb-1 ml-1 h-5 w-5" /> 
+          </a>
         </li>
       </ul>
     </div>

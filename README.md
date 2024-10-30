@@ -2,9 +2,9 @@
 
 **Ingredients**: Vue 3, Vite, Headless UI and Tailwind
 
-Just wanted to get some reps in using Vue 3 and Tailwind mainly. Headless UI turned out to be a pretty awesome component library that had the simple things I needed for my portfolio. Vite is also _very fast_ and I definitely dig it.
+**Instructions**: Mix thoroughly and code
 
-Granted this is a small portfolio site not a production app 🤷‍♂️
+**Produces**: One portfolio website
 
 ---
 
